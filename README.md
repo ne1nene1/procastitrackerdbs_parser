@@ -41,6 +41,7 @@ the flatten_node_tree method will flatten all Node object and all Day object ass
  - tag: tag of the entry (get tag from tagindex)
  - day.activeseconds: active second of the entry in 
  - day.semiidleseconds
+
 ... the rest are self-explanatory
 (note: day.activeseconds and day.semiidleseconds are in %H:%M:%S format while day.key, day.lmb, day.rmb, day.scrollwheell are in int)
 
