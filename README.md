@@ -4,7 +4,7 @@ a parser for procastitracker database
 ## usage:
 
 ```python
-import procastitrackerdbs_parser as parser
+import procastitrackerdbs_parser as proparser
 
 # parse database
 my_db = proparser.load_db("path/to/procastitracker/database/db.PT")
@@ -16,7 +16,7 @@ my_data_flatten = my_db.flatten_node_tree()
 my_data_flatten_merged = proparser.merge_node_with_no_day(my_data_flatten)
 ```
 
-## explaination:
+## explanation:
 please read procastitracker database's file format spec by the author [here](./file_format.txt) to get a better understanding of how this script works
 
 ### procastitrackerdbs_parser.load_db(file_path)
@@ -41,10 +41,10 @@ the flatten_node_tree method will flatten all Node object and all Day object ass
  - tag: tag of the entry (get tag from tagindex)
  - day.activeseconds: active second of the entry in 
  - day.semiidleseconds
-... the rest are self-explainatory
+... the rest are self-explanatory
 (note: day.activeseconds and day.semiidleseconds are in %H:%M:%S format while day.key, day.lmb, day.rmb, day.scrollwheell are in int)
 
-notice that this method will automatically clean up name of the node as well as using tagindex of the Node object from tags Database object to get tag of the node
+notice that this method will automatically clean up the name of node as well as getting tag of the node too.
 
 ## author
 @ne1nene (Soulmine) [github](https://github.com/ne1nene1/)
