@@ -43,6 +43,7 @@ the flatten_node_tree method will flatten all Node object and all Day object ass
  - day.semiidleseconds
 
 ... the rest are self-explanatory
+
 (note: day.activeseconds and day.semiidleseconds are in %H:%M:%S format while day.key, day.lmb, day.rmb, day.scrollwheell are in int)
 
 notice that this method will automatically clean up the name of node as well as getting tag of the node too.
