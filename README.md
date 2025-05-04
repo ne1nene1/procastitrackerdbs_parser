@@ -11,9 +11,6 @@ my_db = proparser.load_db("path/to/procastitracker/database/db.PT")
 
 # flatten database structure
 my_data_flatten = my_db.flatten_node_tree()
-
-# merging node with no day to the node below, repeating until it has day
-my_data_flatten_merged = proparser.merge_node_with_no_day(my_data_flatten)
 ```
 
 ## explanation:
