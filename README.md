@@ -1,5 +1,5 @@
 # procastitrackerdbs_parser
-a parser for procastitracker database
+a parser for [procastitracker](https://strlen.com/procrastitracker/) database
 
 ## usage:
 
@@ -14,7 +14,7 @@ my_data_flatten = my_db.flatten_node_tree()
 ```
 
 ## explanation:
-please read procastitracker database's file format spec by the author [here](./file_format.txt) to get a better understanding of how this script works
+please read procastitracker database's file format spec by the author [here](https://github.com/aardappel/procrastitracker/blob/master/PT/file_format.txt) to get a better understanding of how this script works
 
 ### procastitrackerdbs_parser.load_db(file_path)
 parse procastitracker database file in path file_path
